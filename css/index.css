@@ -1,0 +1,15 @@
+﻿.bold{font-weight: bolder !important;}
+
+.bottom2px{ margin-bottom: 2px !important;}
+
+.b-3px{padding-bottom: 10px !important;}
+
+.card{min-width: 500px;}
+
+textarea{ margin-left: 5px !important;}
+
+.vertically-center{
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
