@@ -48,14 +48,14 @@
             <div class="field">
               <p class='bold bottom2px'>Product Name</p>
               <div class="field">
-                <input type="text" name="shipping[product-name]" placeholder="Product Name">
+                <input id='productName' type="text" name="shipping[product-name]" placeholder="Product Name">
 
               </div>
             </div>
             <div class="field">
               <p class='bold bottom2px'>Price</p>
               <div class="fields">
-                <div class="sixteen wide field"> <input type="text" name="shipping[Price]"
+                <div class="sixteen wide field"> <input type="text" id="productPrice" name="shipping[Price]"
                     placeholder="Price">
                 </div>
 
@@ -64,7 +64,7 @@
             <div class="field">
               <p class='bold bottom2px'>Product Image Link</p>
               <div class="fields">
-                <div class="sixteen wide field"> <input type="text" name="shipping[image]"
+                <div class="sixteen wide field"> <input id="productImage" type="text" name="shipping[image]"
                     placeholder="Link">
                 </div>
 
@@ -74,12 +74,14 @@
             <div class="field">
               <p class='bold bottom2px'>Discription</p>
               <div class="fields">
-                <textarea></textarea>
+                <textarea id="productDescription"></textarea>
                 
 
               </div>
+
            
 <div id="SubmitBtn" class="ui button" tabindex="0">Submit Order</div>
+
 
     </form>
 
@@ -89,7 +91,26 @@
 
   </div>
 </div>
+
+
+
+
+
+<div class="ui modal center white redbg top0 absolute longwidth" >
+  <i class="close white icon"></i>
+  <div class="redbg h50px">
+<p id="error" class="margin20px white">   please fill all the fields
+  </p></div>
+</div>
+
+
+
+<script src="./semantic/jquery-3.2.1.min.js"></script>
+
+<script src="./semantic/Semantic-UI-CSS-master/semantic.js"></script>
 <script src="./js/index.js"></script>
+
+
 </body>
 
 </html>

@@ -13,3 +13,19 @@ textarea{ margin-left: 5px !important;}
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+.redbg{background-color: red !important;}
+
+.top0{top: 0 !important;}
+
+.absolute{position: absolute;}
+
+.longwidth{width: -webkit-fill-available !important;}
+
+.center{text-align: center !important;}
+
+.white{color: white !important;}
+
+.h50px{height: 50px!important;}
+
+.margin20px{margin: 20px !important;}
