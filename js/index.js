@@ -11,7 +11,7 @@ var pushData = () => {
       $('.ui.modal')
         .modal('show');
     } else {
-      if (flag === 'true') { } else {
+      if (flag === 'false') { } else {
 
         flag = 'true'
       }
