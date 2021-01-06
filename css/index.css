@@ -29,3 +29,41 @@ textarea{ margin-left: 5px !important;}
 .h50px{height: 50px!important;}
 
 .margin20px{margin: 20px !important;}
+
+
+.blue { 
+    background-color: #007aff !important; 
+    color: #fff !important;
+    
+    font-size: 100% !important;
+    height: 100%!important;
+    font-family: "Roboto", sans-serif !important;
+  }
+  
+  .Err404btn {
+background-color: transparent !important;
+width: 50% !important;
+font-size: large !important;
+color: white !important;
+box-shadow: 0 0 0 2px white inset!important;
+border: 1px white solid !important;
+  }
+  
+  .Err404btn:hover {
+    background-color: darkblue !important;
+    color: #fff !important;
+    box-shadow: 0 0 0 2px darkblue inset!important;
+  border: 1px darkblue solid !important;
+  }
+  p {
+    font-size: 2em !important;
+    text-align: center !important;
+    font-weight: 100 !important;
+  }
+  
+  .fsize20em {
+      font-size: 20em !important;
+  }
+  .shadow{      text-shadow: 20px 0px 0px #0062cc;
+
+  }

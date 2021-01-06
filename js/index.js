@@ -1,4 +1,36 @@
 
+var getData =()=>{
+database().ref
+
+
+var refr =    database() .ref(`items`);
+refr 
+        .on("value", (data)=>{
+          let num=   data.numChildren()
+            //alert(num)
+             if(!num){
+        document.getElementById("spinner").style.display = 'none'
+                document.getElementById('list').innerHTML=''
+                document.getElementById('nothing').style.display='block'
+                myData=[]
+
+             }else{
+                         myData=[]
+                         document.getElementById('nothing').style.display='none'
+
+                            data.forEach(on_Data)
+                         //   dataUpdated()
+             }
+            
+        } )
+    // on_Data()
+
+
+
+  
+
+}
+
 
 
 var pushData = () => {
@@ -28,8 +60,10 @@ var pushData = () => {
       
 
     })
+    location.href='/pages'
   }
+
 }
 
-document.getElementById('SubmitBtn').addEventListener('click', pushData)
-
+var btn=document.getElementById('SubmitBtn')
+btn?btn.addEventListener('click', pushData):''

@@ -1816,7 +1816,7 @@
  
  .ui.inverted.black.button:hover,
  .ui.inverted.black.buttons .button:hover {
-     background-color: #000
+     background-color: #000 
  }
  
  .ui.inverted.black.button:focus,
