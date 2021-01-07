@@ -30,8 +30,8 @@ textarea{ margin-left: 5px !important;}
 
 .margin20px{margin: 20px !important;}
 
-
-.blue { 
+.none{display: none !important;}
+/* .blue { 
     background-color: #007aff !important; 
     color: #fff !important;
     
@@ -66,4 +66,4 @@ border: 1px white solid !important;
   }
   .shadow{      text-shadow: 20px 0px 0px #0062cc;
 
-  }
+  } */

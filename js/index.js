@@ -1,37 +1,56 @@
-
-var getData =()=>{
-database().ref
-
-
-var refr =    database() .ref(`items`);
-refr 
-        .on("value", (data)=>{
-          let num=   data.numChildren()
-            //alert(num)
-             if(!num){
-        document.getElementById("spinner").style.display = 'none'
-                document.getElementById('list').innerHTML=''
-                document.getElementById('nothing').style.display='block'
-                myData=[]
-
-             }else{
-                         myData=[]
-                         document.getElementById('nothing').style.display='none'
-
-                            data.forEach(on_Data)
-                         //   dataUpdated()
-             }
-            
-        } )
-    // on_Data()
-
-
-
+  if(document.getElementById("err404")){
+    var getData =()=>{
+  database().ref
   
+  
+  var refr =    database() .ref(`prodectDeteils`);
+   
+        refr.on("value", (data)=>{
+  
+            let num=   data.numChildren()
+              //alert(num)
+               if(!num){
+                resizingImg()
+  
+      err404.className='block'
+  
+  
+               }else{
+                err404.className='none'
+  
+                    setHtml(data)
+               }
+              
+          } )
+      // on_Data()
+  
+  
+  
+    
+  
+  }
+var resizingImg = ()=>{err404=document.getElementById("err404")
+bodyel = document.getElementById("body")
+err404.style.height=bodyel.offsetHeight 
+err404.style.width=bodyel.offsetWidth
 
 }
+getData()
+window.onresize = ()=>{resizingImg()  }
+resizingImg()
 
 
+
+
+
+
+var setHtml=(data)=>{
+var list=  document.getElementById("list")
+list.innerHTML=''
+console.log(1,data,'d.v',data.val())
+
+
+}}else{
 
 var pushData = () => {
     var flag = ''
@@ -44,7 +63,7 @@ var pushData = () => {
         .modal('show');
     } else {
       if (flag === 'false') { } else {
-
+alert()
         flag = 'true'
       }
     }
@@ -66,4 +85,5 @@ var pushData = () => {
 }
 
 var btn=document.getElementById('SubmitBtn')
-btn?btn.addEventListener('click', pushData):''
+btn.addEventListener('click', pushData)
+}
