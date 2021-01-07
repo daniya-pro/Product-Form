@@ -57,12 +57,12 @@ var pushData = () => {
 
   document.querySelectorAll("input").forEach((a) => {
     if (a.value.trim() === '') {
-      flag = "false"
+      flag = "falses"
 
       $('.ui.modal')
         .modal('show');
     } else {
-      if (flag === 'false') { } else {
+      if (flag === 'falses') { } else {
 alert()
         flag = 'true'
       }
