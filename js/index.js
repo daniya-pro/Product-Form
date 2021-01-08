@@ -51,36 +51,36 @@ console.log(1,data,'d.v',data.val())
 
 
 }}else{
-
+  
 var pushData = () => {
-    var flag = ''
+  var flag = ''
 
-  document.querySelectorAll("input").forEach((a) => {
-    if (a.value.trim() === '') {
-      flag = "falses"
+document.querySelectorAll("input").forEach((a) => {
+  if (a.value.trim() === '') {
+    flag = "falses"
 
-      $('.ui.modal')
-        .modal('show');
-    } else {
-      if (flag === 'falses') { } else {
+    $('.ui.modal')
+      .modal('show');
+  } else {
+    if (flag === 'falses') { } else {
 alert()
-        flag = 'true'
-      }
+      flag = 'true'
     }
+  }
 
+
+})
+if (flag === 'true') {
+  firebase.database().ref('prodectDeteils').push({
+    productName: document.getElementById('productName').value,
+    productPrice: document.getElementById('productPrice').value,
+    productImagelink: document.getElementById('productImage').value,
+    productDescription: document.getElementById('productDescription').value
+    
 
   })
-  if (flag === 'true') {
-    firebase.database().ref('prodectDeteils').push({
-      productName: document.getElementById('productName').value,
-      productPrice: document.getElementById('productPrice').value,
-      productImagelink: document.getElementById('productImage').value,
-      productDescription: document.getElementById('productDescription').value
-      
-
-    })
-    location.href='/pages'
-  }
+  location.href='/pages'
+}
 
 }
 
