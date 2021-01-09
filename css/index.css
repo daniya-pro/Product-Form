@@ -14,11 +14,20 @@ textarea{ margin-left: 5px !important;}
     transform: translateY(-50%);
 }
 
+.centered-btn{
+
+  bottom: 5pc !important;
+  width: 50% !important;
+  left: 23% !important;
+
+
+}
+
 .redbg{background-color: red !important;}
 
 .top0{top: 0 !important;}
 
-.absolute{position: absolute;}
+.absolute{position: absolute !important;}
 
 .longwidth{width: -webkit-fill-available !important;}
 
@@ -31,6 +40,8 @@ textarea{ margin-left: 5px !important;}
 .margin20px{margin: 20px !important;}
 
 .none{display: none !important;}
+
+.inline-block{display: inline-block !important;}
 /* .blue { 
     background-color: #007aff !important; 
     color: #fff !important;

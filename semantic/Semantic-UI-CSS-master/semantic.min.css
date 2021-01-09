@@ -1796,8 +1796,8 @@
  .ui.inverted.black.button,
  .ui.inverted.black.buttons .button {
      background-color: transparent;
-     -webkit-box-shadow: 0 0 0 2px #d4d4d5 inset!important;
-     box-shadow: 0 0 0 2px #d4d4d5 inset!important;
+     -webkit-box-shadow: 0 0 0 2px #fff inset!important;
+     box-shadow: 0 0 0 2px #fff inset!important;
      color: #fff
  }
  
