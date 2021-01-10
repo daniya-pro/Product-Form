@@ -55,33 +55,39 @@ var {productName} = obj
 var {Price} = obj
 var {Description} = obj
 var {Sign} =obj
-list.innerHTML+=`<div class="ui card inline-block">
-<select name="cars" class="ui dropdown" onchange='drdownchange' id="cars">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
-  </select>
-<div id="list"></div>
-<div class="image">
-  <img src="${Link}" onerror="errorCallback(true)" alt='image not found'>
-</div>
-<div class="content">
-  <a class="header">${productName}</a>
-  <div class="meta">
-    <span class="date">${Sign} ${Price}</span>
-  </div>
-  <div class="description">
-${Description}  </div>
-</div>
-
-</div>
-
+list.innerHTML+=`
+<div class='ui card' style=''>
+<div class="ui dropdown">
+<i class="ellipsis vertical icon" style='font-size: 1.3em!important;'></i>
+    <div class="menu" >
+      <div class="item">Delete</div>
+      <div class="item">
+        
+Edit      </div>
+      
+        </div></div> 
+    <div class="image">
+      <img src="${Link}" onerror="errorCallback(true)" alt='image not found'>
+    </div>
+    <div class="content">
+      <span class="header">${productName}</span></div>
+      <div class="meta">
+        <span class="date">${Sign} ${Price}</span>
+      </div>
+      <div class="description">
+    ${Description}  </div>
+    </div>
+    
 `
+// alert()
 console.log(obj)
 }
-)
 
+
+)
+console.log(data)
+$('.ui.dropdown')
+.dropdown();
 }
 
 }else{
@@ -127,8 +133,5 @@ if (flag === 'true') {
 var btn=document.getElementById('SubmitBtn')
 btn.addEventListener('click', pushData)
 }
-$(".ui.dropdown").dropdown({
-  onChange:(value,text)=>{console.log(text,value,'a') 
-  ;}
-}
-)
+$('.dropdown').dropdown('setting', 'onChange', ()=>{alert()})
+
